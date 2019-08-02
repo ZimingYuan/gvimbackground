@@ -815,6 +815,16 @@ if r == g && g == b
         let r = r - 1
     endif
 endif
+" When a color channel is equal to 64 will also cause display error:(
+if r == 64
+    let r = r + 1
+endif
+if g == 64
+    let g = g + 1
+endif
+if b == 64
+    let b = b + 1
+endif
 let s = printf('#%02x%02x%02x', r, g, b)
 
 silent exec 'hi Normal guibg=' . s
