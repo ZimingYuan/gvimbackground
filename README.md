@@ -1,4 +1,5 @@
 # GVim Background
+[中文](https://github.com/ZimingYuan/gvimbackground/blob/master/README_zh.md)
 Use image as gvim(Windows)'s background. Using WindowsAPI and OpenCV library.
 ### Usage(4 steps):
 1. Put the 'gvimbackground.exe' and the 'opencv_world401.dll' into the same folder as 'gvim.exe'.
@@ -12,7 +13,8 @@ let Path = 'D:\1.jpg'
 * 'D:\1.jpg' means the path of the image you want to use as your gvim's background.
 4. Enjoy coding:)
 
-![example(Smiling face background is from https://learnopengl.com/img/textures/awesomeface.png)](https://github.com/ZimingYuan/gvimbackground/blob/master/example.png)
+![](https://github.com/ZimingYuan/gvimbackground/blob/master/example.png)
+example(Smiling face background is from [learnopengl.com](https://learnopengl.com/img/textures/awesomeface.png))
 ### Notice:
 1. This plugin can only run on 64-bit Windows and is only for gvim instead of terminal vim. If you want to use it on 32-bit windows, you can compile the 'gvimbackground.exe' youself(Using 32-bit OpenCV library).
 2. When using this plugin, don't drag the gvim window too fast...
