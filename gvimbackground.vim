@@ -1,5 +1,5 @@
 " gvimbackground.vim - Use image as gvim(Windows)'s background.
-" Author:       Jeremy Yuan <http://tpo.pe/>
+" Author:       Jeremy Yuan <https://github.com/ZimingYuan>
 " Version:      1.0
 
 if ! has('gui_running') || ! exists('Alpha') || ! exists('Path')
