@@ -8,7 +8,6 @@ Use image as gvim(Windows)'s background. Using WindowsAPI and OpenCV library.
 ```
 let Alpha = '0.2'
 let Path = 'D:\1.jpg'
-call foreground()
 ```
 * '0.2' means the mixing ratio of your image and the original background color. If you set it to 0.0, the image will not display. If you set it to 1.0, you will see the original image. You can change it to any value in range [0.0, 1.0].
 * 'D:\1.jpg' means the path of the image you want to use as your gvim's background.
