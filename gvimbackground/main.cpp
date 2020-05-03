@@ -72,15 +72,15 @@ int main(int argc, char *argv[]) {
 				visible = false;
 			}
 		} else {
-			if (!visible) {
-				ShowWindow(imgw, SW_SHOW);
-				visible = true;
-			}
 
 			RECT textrect;
 			GetWindowRect(textwin, &textrect); // Get text area's position and size
 			bool f = GetForegroundWindow() == vim; // Transform opencv's window and make sure that vim window never gives the focus to opencv window
-			if (! Rectcmp(winrect, textrect) || (!topisvim && f)) {
+			if (! visible || ! Rectcmp(winrect, textrect) || (!topisvim && f)) {
+				if (!visible) {
+					ShowWindow(imgw, SW_SHOW);
+					visible = true;
+				}
 				winrect = textrect;
 				int winwidth = winrect.right - winrect.left, winheight = winrect.bottom - winrect.top;
 				cv::Rect crop;
