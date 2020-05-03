@@ -829,4 +829,10 @@ let s = printf('#%02x%02x%02x', r, g, b)
 
 silent exec 'hi Normal guibg=' . s
 silent exec 'hi NonText guibg=' . s
-silent exec '!start gvimbackground ' . strpart(s, 1) . ' ' . Alpha . ' ' . Path
+silent exec '!start gvimbackground ' . strpart(s, 1) . ' ' . Alpha . ' ' . Path . ' ' . MidX . ' ' . MidY
+unlet colors
+unlet color
+unlet r
+unlet g
+unlet b
+unlet s
